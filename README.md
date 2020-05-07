@@ -73,6 +73,21 @@ mBaseicDialog1.show();
 ```
 有兴趣的朋友可以下载源码查看，里面用到了builder设计模式和fragment的生命周期，总的来说，还有很大的优化空间。
 
+使用方法
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.cnm7625904:SimpleDialog:Tag'
+	}
+Share this release:
 
 
 
