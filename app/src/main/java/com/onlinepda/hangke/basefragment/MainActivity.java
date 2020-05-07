@@ -2,14 +2,16 @@ package com.onlinepda.hangke.basefragment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.support.v7.widget.AppCompatEditText;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.onlinepda.hangke.basefragment.tools.dialogtools.BaseicDialog;
 import com.onlinepda.hangke.basefragment.tools.dialogtools.CallBack;
 import com.onlinepda.hangke.basefragment.tools.dialogtools.DialogAnim;
+
 //外部模糊
 //打造多个例子
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tv7;//拍照选图
     TextView tv8;//今日头条
     TextView tv9;//BOSS直聘
+    TextView tv10;//头条评论
+
     BaseicDialog mBaseicDialog1;
     BaseicDialog mBaseicDialog2=new BaseicDialog();
     private BaseicDialog.Builder builder2;
@@ -38,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         tv7=findViewById(R.id.tv7);
         tv8=findViewById(R.id.tv8);
         tv9=findViewById(R.id.tv9);
+        tv10=findViewById(R.id.tv10);
+
         mBaseicDialog1=new BaseicDialog.Builder()
                 .setAttachContext(this)//依附的Context
                 .setView(R.layout.dialog_base)//自定义布局
@@ -56,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         clicks();
+
     }
 
     private void clicks() {
@@ -210,6 +217,30 @@ public class MainActivity extends AppCompatActivity {
                         .setView(R.layout.dialog_boss);//自定义布局
                 mBaseicDialog2.setBuilder(builder2);
                 mBaseicDialog2.show();
+            }
+        });
+        tv10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                builder2 =new BaseicDialog.Builder()
+                        .setAnim(DialogAnim.STAYBOTTOM)
+                        .setFullScreen(true)
+                        .setDimAmount(0.3f)
+                        .setAttachContext(MainActivity.this)//依附的Context
+                        .setOnViewClickListaner(new CallBack() {
+                            @Override
+                            public void getDialogView(View view) {
+                                AppCompatEditText et=view.findViewById(R.id.et);
+                                et.setFocusable(true);
+                                et.setFocusableInTouchMode(true);
+                                et.requestFocus();
+                                mBaseicDialog2.getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+                            }
+                        })
+                        .setView(R.layout.dialog_comment);//自定义布局
+                mBaseicDialog2.setBuilder(builder2);
+                mBaseicDialog2.show();
+
             }
         });
     }

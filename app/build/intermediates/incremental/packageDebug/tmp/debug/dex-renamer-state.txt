@@ -1,4 +1,4 @@
-#Wed May 06 09:50:00 CST 2020
+#Thu May 07 14:18:08 CST 2020
 path.3=classes.dex
 path.2=classes.dex
 path.1=classes.dex
@@ -7,10 +7,10 @@ path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=F\:\\BaseDialog\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.4=F\:\\gitApp\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 renamed.0=classes.dex
-base.3=F\:\\BaseDialog\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-base.2=F\:\\BaseDialog\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.1=F\:\\BaseDialog\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.0=F\:\\BaseDialog\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.3=F\:\\gitApp\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.2=F\:\\gitApp\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.1=F\:\\gitApp\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.0=F\:\\gitApp\\BaseDialog\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 path.4=classes.dex
