@@ -1,6 +1,8 @@
 # SimpleDialog
 一款简单通用的FragmentDialog
 ##先看看效果
+
+
 ![top.gif](https://upload-images.jianshu.io/upload_images/6307403-691bd441d6e9a46f.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
 ![bottom.gif](https://upload-images.jianshu.io/upload_images/6307403-7da4151017b05b00.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
 ![device-2020-05-07-112100.gif](https://upload-images.jianshu.io/upload_images/6307403-182cea80e7cc8e59.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/310)
