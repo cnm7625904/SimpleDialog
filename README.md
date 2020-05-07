@@ -85,9 +85,9 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.cnm7625904:SimpleDialog:Tag'
+	        implementation 'com.github.cnm7625904:SimpleDialog:1.0.0'
 	}
-Share this release:
+
 
 
 
