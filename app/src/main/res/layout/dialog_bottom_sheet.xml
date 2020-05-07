@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/bottom_menu"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="相机"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3" />
+
+        <TextView
+            android:id="@+id/menu_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:text="相册"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D3D3" />
+
+        <TextView
+            android:id="@+id/menu_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="退出登录"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="取消"
+        android:background="@drawable/bottom_menu"
+        android:padding="10dp"
+        android:layout_margin="13dp"
+        android:gravity="center"/>
+</LinearLayout>

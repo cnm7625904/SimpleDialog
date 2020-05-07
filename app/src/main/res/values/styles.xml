@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--从底到顶动画效果-->
+    <style name="dialogWindowAnimButtomToTop" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+    <!--从顶到底动画效果-->
+    <style name="dialogWindowAnimTopToButtom" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_out</item>
+    </style>
+    <!--从左到右动画效果-->
+    <style name="dialogWindowAnimLeftToRight" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_left_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_left_out</item>
+    </style>
+    <!--从右到左动画效果-->
+    <style name="dialogWindowAnimRightToLeft" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_rihgt_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+    <!--停留在底部动画效果-->
+    <style name="dialogWindowAnimStayButtom" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_stay_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_stay_out</item>
+    </style>
+    <style name="BottomDialog" parent="android:Animation">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="PayDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+    <style name="FragmentDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_rihgt_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+
+</resources>
